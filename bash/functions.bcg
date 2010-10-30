@@ -1,0 +1,5 @@
+function clean_profile
+{
+    b profile.clean -D:OutlookProfile="\"$1\""
+}
+

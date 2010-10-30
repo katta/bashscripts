@@ -1,0 +1,27 @@
+[user]
+	name = Srivatsa Katta
+	email = skatta@thoughtworks.com
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	rb = rebase -i
+	cpk = cherry-pick
+	pull = pull --rebase
+[merge]
+	tool = kdiff3
+[core]
+	autocrlf = false
+[mergetool "kdiff3"]
+	path = E:/Installation/KDiff3/kdiff3.exe
+[mergetool]
+	keepBackup = false
+[branch]
+	autosetuprebase = always
+	autosetupmerge = true
+[push]
+	default = tracking

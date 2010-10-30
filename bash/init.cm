@@ -1,0 +1,2 @@
+PS1="\[\e]0;\w\a\]\n\[\e[32m\]\w \[\e[33m\]\$(git_branch) \[\e[0m\]\n\$ "
+cd /c/imdproj/codebase

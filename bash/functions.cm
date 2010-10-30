@@ -1,0 +1,21 @@
+#!/bin/bash
+
+function git_branch 
+{
+    git branch 2>/dev/null | grep '*' | cut -c 3-
+}
+
+function git_remote_branch 
+{
+    git config -l 2>/dev/null | grep "branch.`git_branch`.merge" | cut -d "=" -f2 | sed "s/refs\/heads\///"
+}
+
+function git_remote_alias
+{
+    git config -l 2>/dev/null | grep "branch.`git_branch`.remote" | cut -d "=" -f2 
+}
+
+function topush
+{
+    git log "`git_remote_alias`/`git_remote_branch`..HEAD" --name-status 
+}
