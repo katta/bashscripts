@@ -3,3 +3,11 @@ function clean_profile
     b profile.clean -D:OutlookProfile="\"$1\""
 }
 
+function miglog 
+{
+    for fi in `grep -rli "\[$1\]" . | sort -r`
+    do
+        cat $fi | grep -i "\[$1\]" >>$2
+    done
+}
+
