@@ -19,3 +19,9 @@ function topush
 {
     git log "`git_remote_alias`/`git_remote_branch`..HEAD" --name-status 
 }
+
+function tstart_dbg
+{
+    export JAVA_OPTS="$JAVA_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000"
+    tstart
+}
