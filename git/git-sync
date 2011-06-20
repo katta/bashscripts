@@ -2,7 +2,7 @@
 
 if [ $# != 2 ] 
 then
-    echo "Usage : gsync.sh <remote> <branch>"
+    echo "Usage : git sync <remote> <branch>"
     exit 1
 fi
 
