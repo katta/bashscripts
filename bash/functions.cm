@@ -2,7 +2,8 @@
 
 function git_branch 
 {
-    git branch 2>/dev/null | grep '*' | cut -c 3-
+    #git branch 2>/dev/null | grep '*' | cut -c 3-
+    basename `git symbolic-ref HEAD 2>/dev/null`
 }
 
 function git_remote_branch 
