@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# This fetches one branch from the remote repository, merges with the specified local branch
+# and then pushes to the remote repository (assumes there are no conflicts)
+
+
 if [ $# != 2 ] 
 then
     echo "Usage : git sync <remote> <branch>"
