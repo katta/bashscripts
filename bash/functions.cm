@@ -26,3 +26,15 @@ function tstart_dbg
     export JAVA_OPTS="$JAVA_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000"
     tstart
 }
+
+function start_couchdb
+{
+    launchctl load /usr/local/Cellar/couchdb/1.2.0/Library/LaunchDaemons/org.apache.couchdb.plist
+}
+
+
+function stop_couchdb
+{
+    launchctl unload /usr/local/Cellar/couchdb/1.2.0/Library/LaunchDaemons/org.apache.couchdb.plist
+}
+
