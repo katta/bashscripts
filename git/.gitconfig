@@ -1,5 +1,5 @@
 [user]
-	name = Srivatsa Katta
+  name = Srivatsa Katta
 	email = vatsa.katta@gmail.com
 [github]
 	user = katta
@@ -15,7 +15,7 @@
 	rb = rebase -i
 	cpk = cherry-pick
 	pull = pull --rebase
-    	slog = log --oneline --decorate=short
+ 	slog = log --oneline --decorate=short
 	glog = log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 [core]
 	autocrlf = false
