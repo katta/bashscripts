@@ -1,6 +1,6 @@
-function runem
+function kstubs
 {
-    cd ~/proj/sip/motech/codebase/openxdata/epihandy-midlet/
-	ant run
+    cd ~/proj/motech/codebase/ananya-kilkari/stubs
+    ruby stubs.rb profiles/kilkari.profile
 }
 
