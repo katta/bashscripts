@@ -6,7 +6,7 @@ function kstubs
 
 function cleancouch
 {
-  deletecouchdb motech-obd motech-subscription motech-message-campaign motech-retries rules kilkari
+  deletecouchdb motech-obd motech-subscription motech-message-campaign motech-retries rules
 }
 
 function deletecouchdb
