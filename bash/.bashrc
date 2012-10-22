@@ -1,6 +1,7 @@
 export GRADLE_HOME=/usr/local/Cellar/gradle/1.2/libexec
 export GROOVY_HOME=/usr/local/Cellar/groovy/2.0.4/libexec
 export LSCOLORS=Exfxcxdxbxegedabagacad
+export JAVA_HOME=/Library/Java/Home
 export MAVEN_OPTS='-Xmx1024m -Xms256m -XX:MaxPermSize=256m -agentpath:/Users/skatta/proj/faketime/lib/mac/libfaketime.jnilib'
 PATH=/usr/local/bin:$PATH:/Users/skatta/.rvm/bin
 
