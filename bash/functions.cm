@@ -48,3 +48,8 @@ function share
   nvm use v0.8.12
   serve 
 }
+
+function prettyjson () 
+{ 
+    python -mjson.tool
+}

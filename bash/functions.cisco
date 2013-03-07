@@ -2,3 +2,22 @@ function desindex
 {
   curl -XDELETE "localhost:9200/$1"
 }
+
+function gtest 
+{
+   NODE_ENV=test grunt test
+}
+
+function refsite
+{
+  cp -R ~/proj/cisco/projects/es-search-server/plugins/CiscoAdminPlugin/_site /Users/skatta/apps/elasticsearch-0.20.2-node2/plugins/cisco-admin-plugin
+}
+
+function grtest
+{
+    if [ $# -eq 0 ]; then
+    	NODE_ENV=test grunt test
+    else
+    	NODE_ENV=test TEST=$1 grunt test
+    fi
+}
