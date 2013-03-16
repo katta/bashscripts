@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 syntax on
 filetype indent plugin on
 
@@ -9,7 +11,6 @@ set autoindent
 set pastetoggle=<F7>
 set dir=~/.tmp/vim-swapfiles,.
 set wildignore+=*.class,.git
-set runtimepath+=~/.vim/l9,~/.vim/fuzzyfinder
 set number
 
 map Q gq
@@ -22,7 +23,6 @@ map <C-6> :e#<CR>
 autocmd Filetype starlist set formatlistpat=^\\*\\s*
 autocmd Filetype starlist set formatoptions-=cq
 autocmd Filetype starlist set formatoptions+=n
-autocmd BufRead *.usina source ~/usina.vim
 autocmd BufRead *.json set filetype=javascript
 
 hi clear Search
@@ -31,3 +31,4 @@ hi DiffAdd term=bold ctermbg=4 ctermfg=7
 
 let g:ConqueTerm_TERM = 'xterm'
 let g:ConqueTerm_Color = 1
+
