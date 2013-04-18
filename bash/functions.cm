@@ -53,3 +53,10 @@ function prettyjson ()
 { 
     python -mjson.tool
 }
+
+function showHiddenFiles () 
+{ 
+    local toggle=$1;
+    defaults write com.apple.finder AppleShowAllFiles -bool $toggle;
+    killall Finder
+}

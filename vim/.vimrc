@@ -14,9 +14,18 @@ set wildignore+=*.class,.git
 set number
 
 map Q gq
-map ,e :e <C-R>=expand("%:p:h")<CR>/
-map ,f :FufFile **/<CR>
-map ,c :call fuf#setOneTimeVariables(['g:fuf_file_exclude', '\.jar$\\|/$\\|\.gitignore']) \| FufFile **/<CR>
+
+let mapleader=","
+
+map <Leader>e :e <C-R>=expand("%:p:h")<CR>/
+map <Leader>f :FufFile **/<CR>
+map <Leader>c :call fuf#setOneTimeVariables(['g:fuf_file_exclude', '\.jar$\\|/$\\|\.gitignore']) \| FufFile **/<CR>
+map <Leader>a :Ack
+
+map <Leader>nt :NERDTreeToggle <CR>
+map <Leader>nf :NERDTreeFind <CR>
+map <Leader>ntr :NERDTree <CR>
+
 map <C-h> :nohlsearch<CR>
 map <C-6> :e#<CR>
 
