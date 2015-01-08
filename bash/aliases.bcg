@@ -1,3 +1,6 @@
 alias b='cmd //C b.bat'
 alias au='b after.update'
 alias esync='c /c/imdproj/codebase/src/Synchronization/Exchange/IMD.ContactMigrationTool/bin/Debug/IMD.ContactMigrationTool.exe'
+
+
+alias hello = "echo hello"
