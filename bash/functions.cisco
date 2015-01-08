@@ -1,6 +1,6 @@
 function copysite
 {
-  cp -R ~/proj/cisco/projects/es-search-server/plugins/CiscoAdminPlugin/_site /Users/skatta/apps/elasticsearch-0.20.2-node2/plugins/cisco-admin-plugin
+  cp -R ~/proj/cisco/projects/es-search-server/plugins/CiscoAdminPlugin/_site /Users/skatta/apps/elasticsearch-0.20.6/plugins/cisco-admin-plugin
 }
 
 function grtest
@@ -26,6 +26,17 @@ function clientappbuild ()
 
 function deploytoliferay ()
 {
-    rm -i -rf ~/apps/liferay/bundles/tomcat-7.0.27/webapps/elasticsearch-liferay;
-    cp /Users/skatta/proj/cisco/projects/spikes/elasticsearch-liferay/target/elasticsearch-liferay.war ~/apps/liferay/bundles/deploy
+    _env=dev
+    if [ $# -gt 0 ]; then
+       _env=$1
+    fi
+
+    rm -rf ~/apps/liferay/bundles/tomcat-7.0.27/webapps/elasticsearch-web;
+    cp /Users/skatta/proj/cisco/projects/es-search-server/liferay/elasticsearch-web/target/elasticsearch-web.war ~/apps/liferay/bundles/deploy
+    cp -f /Users/skatta/proj/cisco/projects/es-search-server/liferay/elasticsearch-web/conf/application.$_env.properties ~/apps/liferay/bundles/tomcat-7.0.27/conf/elasticsearch-web/application.properties
+}
+
+function cssh() 
+{
+  ssh -i ~/.ssh/ciscovm_tw_id_rsa thoughtworks@$1
 }

@@ -49,7 +49,7 @@ function share
   serve 
 }
 
-function prettyjson () 
+function pp () 
 { 
     python -mjson.tool
 }
@@ -59,4 +59,14 @@ function showHiddenFiles ()
     local toggle=$1;
     defaults write com.apple.finder AppleShowAllFiles -bool $toggle;
     killall Finder
+}
+
+function findProcess()
+{
+    ps ax | grep $1
+}
+
+function ncdownload()
+{
+    nc $1 9999 > $2
 }
