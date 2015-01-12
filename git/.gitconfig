@@ -25,6 +25,7 @@
 	ignorecase = false
 	filemode = false
 	excludesfile = /Users/skatta/.gitignore_global
+	safecrlf = false
 [branch]
 	autosetuprebase = always
 	autosetupmerge = true
