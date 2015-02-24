@@ -1,9 +1,6 @@
 [user]
 	name = Srivatsa Katta
 	email = vatsa.katta@gmail.com
-[github]
-	user = katta
-	token = be0656837d3ef36850cb11a1edbb1e66
 [color]
 	status = auto
 	branch = auto
