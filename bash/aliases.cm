@@ -24,6 +24,7 @@ alias wsend='~/.wsend/wsend'
 alias rcl='riakcli'
 alias v='vagrant'
 alias he='heroku'
+alias unhitch='hitch -u'
 
 alias b='curl https://kiab-service.herokuapp.com'
 alias bw='curl -XPOST https://kiab-service.herokuapp.com/notify/welcome'

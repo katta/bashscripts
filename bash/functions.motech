@@ -1,4 +1,0 @@
-function crdc2()
-{
-  ssh motech@rdc2
-}
